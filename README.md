@@ -2,15 +2,15 @@
 ## Introduction
 Having completed a two week long sprint for The Tech Academy Python Live Project, this repository serves as a reference to my process. 
 
-Using the Django Framework and PyCharm, the app I created is a Travel Guide to Japan. 
+Using the Django Framework and PyCharm IDE, the application I created is a travel guide to Japan. I worked along side a team of other student developers using Azure DevOps and Agile methodology. The project consisted of ten stories during a two-week long sprint with daily standup meetings and weekly code retrospectives.
 
-Featured below are code snippets that show the development of functionality of the code.
+Featured below is my code that shows some of the development and functionality of my application.
 
 ![images](./images/home.JPG)
 
 ## CRUD Functionality
 ### Create
-The first task was to create a model and function for adding a new place to the travel guide database.
+The first task was to create a model and function-based view for adding a new place to the travel guide database.
 
 ```
 Function:
@@ -25,9 +25,6 @@ def traveljapan_create(request):
 
 
 Model:
-from django.db import models
-
-# choices for islands and type of activity
 islands = [('Hokkaido', 'Hokkaido'), ('Honshu', 'Honshu'), ('Kyushu', 'Kyushu'),
            ('Shikoku', 'Shikoku'), ('Okinawa', 'Okinawa')]
 addTypes = [('Restaurant', 'Restaurant'), ('Sightseeing', 'Sightseeing'), ('Festival', 'Festival'), ('Other', 'Other')]
@@ -48,7 +45,7 @@ class AddEntry(models.Model):
 ```
 
 ### Read
-I developed two views functions, one that displays all items in the database on a details template and another to display all the information about that item.
+To view an item, I developed two functions; one that displays all items in the database on a details template and another to display all the information about a particular item.
 
 ```
 def traveljapan_places(request):
@@ -63,7 +60,7 @@ def traveljapan_details(request, pk):
 ```
 
 ### Update and Delete
-From the details template, a user can update or delete an entry. The delete function will bring up a delete confirmation page, and then return the user to the details template.
+From the details template, a user can update or delete an entry. The update function offers the option to save changes or delete an item. If the user choses to delete, a delete confirmation page will render to be sure the user does in fact want to delete.
 
 ```
 def traveljapan_update(request, pk):
@@ -87,7 +84,7 @@ def traveljapan_delete(request, pk):
 
 ## Web Scraping
 ### Beautiful Soup
-To display a list of attractions from a website, I used Beautiful Soup and scrapped the headers for the names of the attractions.
+To display a list of attractions from a website, I used Beautiful Soup and scraped the headers for the names of the attractions.
 
 ```
 def traveljapan_bs(request):
@@ -106,7 +103,7 @@ def traveljapan_bs(request):
 [under construction]
 
 ## API
-I used the [Kanji Alive](https://app.kanjialive.com/api/docs) API on RapidAPI to display a kanji character and it's english meaning.
+I parsed through a JSON response from the [Kanji Alive](https://app.kanjialive.com/api/docs) API on RapidAPI to display a kanji character and it's english meaning.
 
 ```
 def traveljapan_api(request):
@@ -120,7 +117,6 @@ def traveljapan_api(request):
     response = requests.request("GET", url, headers=headers)
     kanji = json.loads(response.text)
 
-# displays character and meaning from a dictionary JSON object
     character = kanji["kanji"]["character"]
     meaning = kanji["kanji"]["meaning"]["english"]
 
