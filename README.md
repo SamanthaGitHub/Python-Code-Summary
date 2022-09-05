@@ -110,7 +110,7 @@ def traveljapan_api(request):
     url = "https://kanjialive-api.p.rapidapi.com/api/public/kanji/%E8%A8%AA"
 
     headers = {
-        "X-RapidAPI-Key": "f3f220457cmsh6cae92504a1567ep160a94jsn96f0abf6f9e3",
+        "X-RapidAPI-Key": {secret_API_key}
         "X-RapidAPI-Host": "kanjialive-api.p.rapidapi.com"
     }
 
