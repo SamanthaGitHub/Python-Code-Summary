@@ -1,8 +1,6 @@
 # Python Live Project Code Summary
 ## Introduction
-Having completed a two week long sprint for The Tech Academy Python Live Project, this repository serves as a reference to my process. 
-
-Using the Django Framework and PyCharm IDE, the application I created is a travel guide to Japan. I worked along side a team of other student developers using Azure DevOps and Agile methodology. The project consisted of ten stories during a two-week long sprint with daily standup meetings and weekly code retrospectives.
+During my internship at Prosper IT Consulting, I worked with team members to develop a travel guide web application in Python. Using the Django Framework and PyCharm IDE, the application we created is a travel guide to Japan. I worked along side a team of other student developers using Azure DevOps and Agile methodology. The project consisted of ten stories during a two-week long sprint with daily standup meetings and weekly code retrospectives.
 
 Featured below is my code that shows some of the development and functionality of my application.
 
