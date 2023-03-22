@@ -1,6 +1,6 @@
 # Python Internship Code Summary
 ## Introduction
-During my internship at Prosper IT Consulting, I worked with team members to develop a travel guide web application in Python. Using the Django Framework and PyCharm IDE, the application we created is a travel guide to Japan. I worked along side a team of other student developers using Azure DevOps and Agile methodology. The project consisted of ten stories during a two-week long sprint with daily standup meetings and weekly code retrospectives.
+During my internship at Prosper IT Consulting, I worked with team members to develop a travel guide web application in Python. Using the MVT Django Framework and PyCharm IDE, the application we created is a travel guide to Japan. I worked along side a team of other student developers using Azure DevOps and Agile methodology. The project consisted of ten stories during a two-week long sprint with daily standup meetings and weekly code retrospectives.
 
 Featured below is my code that shows some of the development and functionality of my application.
 
@@ -58,7 +58,7 @@ def traveljapan_details(request, pk):
 ```
 
 ### Update and Delete
-From the details template, a user can update or delete an entry. The update function offers the option to save changes or delete an item. If the user choses to delete, a delete confirmation page will render to be sure the user does in fact want to delete.
+From the details template, a user can update or delete an entry. The update function offers the option to save changes or delete an item. If the user chooses to delete, a delete confirmation page will render to be sure the user does in fact want to delete.
 
 ```
 def traveljapan_update(request, pk):
@@ -125,7 +125,7 @@ def traveljapan_api(request):
 
 ## Skills Aquired
 ### <b>Version Control</b>
-Git Version control was used extensively, as all team members worked off of local versions of the same remote repository. I created branches for each of the ten stories and successfully pushed them to the master without merge conflicts, giving me much experience in a professional work environment. I also much more appreciate version control capabilities having had more time and experience in using it during the sprint.
+Git Version Control was used extensively, as all team members worked off of local versions of the same remote repository. I created branches for each of my ten stories and successfully pushed them to the master without merge conflicts, giving me real-world experience in a professional work environment. I also much more appreciate version control capabilities having had more time and experience in using it during the sprint.
 
 ### <b>Researching/Troubleshooting</b>
 When running into roadblocks, I searched online for answers. By using numerous different keywords and looking at different search results I became more adept at finding exactly what I was after. I also learned how useful looking at a variety of answers to a problem is, where I could cherry-pick different aspects I wanted to implement into my code.
